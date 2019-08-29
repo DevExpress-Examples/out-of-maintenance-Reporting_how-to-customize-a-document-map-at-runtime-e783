@@ -112,81 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="XrLabel9.Name" xml:space="preserve">
-    <value>XrLabel9</value>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
   </metadata>
-  <metadata name="XrLabel5.Name" xml:space="preserve">
-    <value>XrLabel5</value>
-  </metadata>
-  <metadata name="xrLabel2.Name" xml:space="preserve">
-    <value>xrLabel2</value>
-  </metadata>
-  <metadata name="XrLabel6.Name" xml:space="preserve">
-    <value>XrLabel6</value>
-  </metadata>
-  <metadata name="Detail2.Name" xml:space="preserve">
-    <value>Detail2</value>
-  </metadata>
-  <metadata name="XrLabel1.Name" xml:space="preserve">
-    <value>XrLabel1</value>
-  </metadata>
-  <metadata name="XrLabel10.Name" xml:space="preserve">
-    <value>XrLabel10</value>
-  </metadata>
-  <metadata name="Detail1.Name" xml:space="preserve">
-    <value>Detail1</value>
-  </metadata>
-  <metadata name="PageFooter.Name" xml:space="preserve">
-    <value>PageFooter</value>
-  </metadata>
-  <metadata name="DetailReport1.Name" xml:space="preserve">
-    <value>DetailReport1</value>
-  </metadata>
-  <metadata name="GroupHeader1.Name" xml:space="preserve">
-    <value>GroupHeader1</value>
-  </metadata>
-  <metadata name="XrLabel7.Name" xml:space="preserve">
-    <value>XrLabel7</value>
-  </metadata>
-  <metadata name="XrLine1.Name" xml:space="preserve">
-    <value>XrLine1</value>
-  </metadata>
-  <metadata name="order_DetailsTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>144, 17</value>
-  </metadata>
-  <metadata name="order_DetailsTableAdapter1.Name" xml:space="preserve">
-    <value>order_DetailsTableAdapter1</value>
-  </metadata>
-  <metadata name="nwindDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="nwindDataSet1.Name" xml:space="preserve">
-    <value>nwindDataSet1</value>
-  </metadata>
-  <metadata name="DetailReport.Name" xml:space="preserve">
-    <value>DetailReport</value>
-  </metadata>
-  <metadata name="ordersTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>509, 17</value>
-  </metadata>
-  <metadata name="ordersTableAdapter1.Name" xml:space="preserve">
-    <value>ordersTableAdapter1</value>
-  </metadata>
-  <metadata name="Detail.Name" xml:space="preserve">
-    <value>Detail</value>
-  </metadata>
-  <metadata name="customersTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>334, 17</value>
-  </metadata>
-  <metadata name="customersTableAdapter1.Name" xml:space="preserve">
-    <value>customersTableAdapter1</value>
-  </metadata>
-  <metadata name="$this.Name" xml:space="preserve">
-    <value>XtraReport1</value>
-  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9Ik9yZGVyIERldGFpbHMiPjxGaWVsZCBOYW1lPSJPcmRlcklEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZHVjdElEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVW5pdFByaWNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJRdWFudGl0eSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IkRpc2NvdW50IiBUeXBlPSJTaW5nbGUiIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3ROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNhdGVnb3J5TmFtZSIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
 </root>

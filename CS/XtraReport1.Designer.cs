@@ -23,213 +23,363 @@ namespace AK16962 {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.XrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.Detail2 = new DevExpress.XtraReports.UI.DetailBand();
-            this.XrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
-            this.Detail1 = new DevExpress.XtraReports.UI.DetailBand();
+            this.components = new System.ComponentModel.Container();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.Join join2 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.MasterDetailInfo masterDetailInfo1 = new DevExpress.DataAccess.Sql.MasterDetailInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo3 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.MasterDetailInfo masterDetailInfo2 = new DevExpress.DataAccess.Sql.MasterDetailInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo4 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraReport1));
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.DetailReport1 = new DevExpress.XtraReports.UI.DetailReportBand();
-            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.XrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLine1 = new DevExpress.XtraReports.UI.XRLine();
-            this.order_DetailsTableAdapter1 = new AK16962.nwindDataSetTableAdapters.Order_DetailsTableAdapter();
-            this.nwindDataSet1 = new AK16962.nwindDataSet();
-            this.DetailReport = new DevExpress.XtraReports.UI.DetailReportBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.customersTableAdapter1 = new AK16962.nwindDataSetTableAdapters.CustomersTableAdapter();
-            this.ordersTableAdapter1 = new AK16962.nwindDataSetTableAdapters.OrdersTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet1)).BeginInit();
+            this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.XrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.XrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.XrLine1 = new DevExpress.XtraReports.UI.XRLine();
+            this.XrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.XrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // XrLabel9
-            // 
-            this.XrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.CustomersOrders.OrderID", "")});
-            this.XrLabel9.Location = new System.Drawing.Point(67, 17);
-            this.XrLabel9.Name = "XrLabel9";
-            this.XrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel9.Size = new System.Drawing.Size(50, 17);
-            this.XrLabel9.Text = "XrLabel9";
-            // 
-            // XrLabel5
-            // 
-            this.XrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.CompanyName", ""),
-            new DevExpress.XtraReports.UI.XRBinding("Bookmark", null, "Customers.CompanyName", "")});
-            this.XrLabel5.Location = new System.Drawing.Point(67, 0);
-            this.XrLabel5.Name = "XrLabel5";
-            this.XrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel5.Size = new System.Drawing.Size(150, 17);
-            this.XrLabel5.Text = "XrLabel5";
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.BookmarkParent = this.XrLabel5;
-            this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.CustomersOrders.OrdersOrder Details.ProductID", ""),
-            new DevExpress.XtraReports.UI.XRBinding("Bookmark", null, "Customers.CustomersOrders.OrdersOrder Details.ProductID", "")});
-            this.xrLabel2.Location = new System.Drawing.Point(183, 0);
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.Size = new System.Drawing.Size(225, 17);
-            this.xrLabel2.Text = "xrLabel2";
-            // 
-            // XrLabel6
-            // 
-            this.XrLabel6.Location = new System.Drawing.Point(0, 0);
-            this.XrLabel6.Name = "XrLabel6";
-            this.XrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel6.Size = new System.Drawing.Size(66, 17);
-            this.XrLabel6.Text = "Customer:";
-            // 
-            // Detail2
-            // 
-            this.Detail2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel2,
-            this.XrLabel1,
-            this.XrLabel10});
-            this.Detail2.Height = 17;
-            this.Detail2.Name = "Detail2";
-            // 
-            // XrLabel1
-            // 
-            this.XrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.CustomersOrders.OrdersOrder Details.Quantity", "")});
-            this.XrLabel1.Location = new System.Drawing.Point(408, 0);
-            this.XrLabel1.Name = "XrLabel1";
-            this.XrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel1.Size = new System.Drawing.Size(167, 17);
-            this.XrLabel1.Text = "xrLabel4";
-            // 
-            // XrLabel10
-            // 
-            this.XrLabel10.Location = new System.Drawing.Point(75, 0);
-            this.XrLabel10.Name = "XrLabel10";
-            this.XrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel10.Size = new System.Drawing.Size(100, 17);
-            this.XrLabel10.Text = "Order Details:";
-            // 
-            // Detail1
-            // 
-            this.Detail1.Height = 0;
-            this.Detail1.Name = "Detail1";
             // 
             // PageFooter
             // 
-            this.PageFooter.Height = 30;
+            this.PageFooter.HeightF = 30F;
             this.PageFooter.Name = "PageFooter";
+            this.PageFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.PageFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // DetailReport1
+            // Detail
             // 
-            this.DetailReport1.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
-            this.Detail2,
-            this.GroupHeader1});
-            this.DetailReport1.DataAdapter = this.order_DetailsTableAdapter1;
-            this.DetailReport1.DataMember = "Customers.CustomersOrders.OrdersOrder Details";
-            this.DetailReport1.DataSource = this.nwindDataSet1;
-            this.DetailReport1.Name = "DetailReport1";
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2});
+            this.Detail.HeightF = 25F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // GroupHeader1
+            // xrTable2
             // 
-            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.XrLabel7,
-            this.XrLabel9,
-            this.XrLine1,
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(102.0833F, 0F);
+            this.xrTable2.Name = "xrTable2";
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow2});
+            this.xrTable2.SizeF = new System.Drawing.SizeF(547.9167F, 25F);
+            // 
+            // xrTableRow2
+            // 
+            this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell4,
+            this.xrTableCell5,
+            this.xrTableCell6});
+            this.xrTableRow2.Name = "xrTableRow2";
+            this.xrTableRow2.Weight = 11.5D;
+            // 
+            // xrTableCell4
+            // 
+            this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[OrderID]")});
+            this.xrTableCell4.Multiline = true;
+            this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.Text = "xrTableCell4";
+            this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell4.Weight = 0.2857142857142857D;
+            // 
+            // xrTableCell5
+            // 
+            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Quantity]")});
+            this.xrTableCell5.Multiline = true;
+            this.xrTableCell5.Name = "xrTableCell5";
+            this.xrTableCell5.Text = "xrTableCell5";
+            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell5.Weight = 0.2857142857142857D;
+            // 
+            // xrTableCell6
+            // 
+            this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")});
+            this.xrTableCell6.Multiline = true;
+            this.xrTableCell6.Name = "xrTableCell6";
+            this.xrTableCell6.Text = "xrTableCell6";
+            this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell6.Weight = 0.2857142857142857D;
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "nwind.mdb";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression1.ColumnName = "OrderID";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"153\" />";
+            table1.Name = "Order Details";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "ProductID";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "UnitPrice";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Quantity";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Discount";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "ProductName";
+            table2.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"267\" />";
+            table2.Name = "Products";
+            columnExpression6.Table = table2;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "CategoryName";
+            table3.MetaSerializable = "<Meta X=\"340\" Y=\"30\" Width=\"125\" Height=\"172\" />";
+            table3.Name = "Categories";
+            columnExpression7.Table = table3;
+            column7.Expression = columnExpression7;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Columns.Add(column6);
+            selectQuery1.Columns.Add(column7);
+            selectQuery1.MetaSerializable = "<Meta X=\"20\" Y=\"20\" Width=\"100\" Height=\"139\" />";
+            selectQuery1.Name = "Order Details";
+            relationColumnInfo1.NestedKeyColumn = "ProductID";
+            relationColumnInfo1.ParentKeyColumn = "ProductID";
+            join1.KeyColumns.Add(relationColumnInfo1);
+            join1.Nested = table2;
+            join1.Parent = table1;
+            relationColumnInfo2.NestedKeyColumn = "CategoryID";
+            relationColumnInfo2.ParentKeyColumn = "CategoryID";
+            join2.KeyColumns.Add(relationColumnInfo2);
+            join2.Nested = table3;
+            join2.Parent = table2;
+            selectQuery1.Relations.Add(join1);
+            selectQuery1.Relations.Add(join2);
+            selectQuery1.Tables.Add(table1);
+            selectQuery1.Tables.Add(table2);
+            selectQuery1.Tables.Add(table3);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            masterDetailInfo1.DetailQueryName = "Products";
+            relationColumnInfo3.NestedKeyColumn = "CategoryID";
+            relationColumnInfo3.ParentKeyColumn = "CategoryID";
+            masterDetailInfo1.KeyColumns.Add(relationColumnInfo3);
+            masterDetailInfo1.MasterQueryName = "Categories";
+            masterDetailInfo2.DetailQueryName = "Order Details";
+            relationColumnInfo4.NestedKeyColumn = "ProductID";
+            relationColumnInfo4.ParentKeyColumn = "ProductID";
+            masterDetailInfo2.KeyColumns.Add(relationColumnInfo4);
+            masterDetailInfo2.MasterQueryName = "Products";
+            this.sqlDataSource1.Relations.AddRange(new DevExpress.DataAccess.Sql.MasterDetailInfo[] {
+            masterDetailInfo1,
+            masterDetailInfo2});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // GroupHeader2
+            // 
+            this.GroupHeader2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.XrLabel6,
             this.XrLabel5,
-            this.XrLabel6});
-            this.GroupHeader1.Height = 60;
-            this.GroupHeader1.Name = "GroupHeader1";
-            this.GroupHeader1.PageBreak = DevExpress.XtraReports.UI.PageBreak.BeforeBand;
-            this.GroupHeader1.RepeatEveryPage = true;
+            this.XrLine1,
+            this.XrLabel9,
+            this.XrLabel7});
+            this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("CategoryName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
+            new DevExpress.XtraReports.UI.GroupField("ProductName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader2.HeightF = 60F;
+            this.GroupHeader2.Level = 1;
+            this.GroupHeader2.Name = "GroupHeader2";
             // 
-            // XrLabel7
+            // XrLabel6
             // 
-            this.XrLabel7.Location = new System.Drawing.Point(0, 17);
-            this.XrLabel7.Name = "XrLabel7";
-            this.XrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel7.Size = new System.Drawing.Size(66, 17);
-            this.XrLabel7.Text = "Order:";
+            this.XrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.XrLabel6.Name = "XrLabel6";
+            this.XrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.XrLabel6.SizeF = new System.Drawing.SizeF(66F, 17F);
+            this.XrLabel6.Text = "Category";
+            this.XrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // XrLabel5
+            // 
+            this.XrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CategoryName]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Bookmark", "[CategoryName]")});
+            this.XrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(67F, 0F);
+            this.XrLabel5.Name = "XrLabel5";
+            this.XrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.XrLabel5.SizeF = new System.Drawing.SizeF(150F, 17F);
+            this.XrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // XrLine1
             // 
             this.XrLine1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.XrLine1.Location = new System.Drawing.Point(0, 35);
+            this.XrLine1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 35F);
             this.XrLine1.Name = "XrLine1";
-            this.XrLine1.ParentStyleUsing.UseBackColor = false;
-            this.XrLine1.Size = new System.Drawing.Size(650, 25);
+            this.XrLine1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.XrLine1.SizeF = new System.Drawing.SizeF(650F, 25F);
             // 
-            // order_DetailsTableAdapter1
+            // XrLabel9
             // 
-            this.order_DetailsTableAdapter1.ClearBeforeFill = true;
+            this.XrLabel9.BookmarkParent = this.XrLabel5;
+            this.XrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductName]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Bookmark", "[ProductName]")});
+            this.XrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(67.00001F, 17.00001F);
+            this.XrLabel9.Name = "XrLabel9";
+            this.XrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.XrLabel9.SizeF = new System.Drawing.SizeF(150F, 17F);
+            this.XrLabel9.Text = "XrLabel9";
+            this.XrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // nwindDataSet1
+            // XrLabel7
             // 
-            this.nwindDataSet1.DataSetName = "nwindDataSet";
-            this.nwindDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.XrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(0F, 17F);
+            this.XrLabel7.Name = "XrLabel7";
+            this.XrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.XrLabel7.SizeF = new System.Drawing.SizeF(66F, 17F);
+            this.XrLabel7.Text = "Product";
+            this.XrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // DetailReport
+            // GroupHeader1
             // 
-            this.DetailReport.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
-            this.Detail1,
-            this.DetailReport1});
-            this.DetailReport.DataAdapter = this.ordersTableAdapter1;
-            this.DetailReport.DataMember = "Customers.CustomersOrders";
-            this.DetailReport.DataSource = this.nwindDataSet1;
-            this.DetailReport.Name = "DetailReport";
+            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable1});
+            this.GroupHeader1.HeightF = 25F;
+            this.GroupHeader1.Name = "GroupHeader1";
+            this.GroupHeader1.RepeatEveryPage = true;
             // 
-            // Detail
+            // xrTable1
             // 
-            this.Detail.Height = 0;
-            this.Detail.Name = "Detail";
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(102.0833F, 0F);
+            this.xrTable1.Name = "xrTable1";
+            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow1});
+            this.xrTable1.SizeF = new System.Drawing.SizeF(547.9167F, 25F);
             // 
-            // customersTableAdapter1
+            // xrTableRow1
             // 
-            this.customersTableAdapter1.ClearBeforeFill = true;
+            this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell1,
+            this.xrTableCell2,
+            this.xrTableCell3});
+            this.xrTableRow1.Name = "xrTableRow1";
+            this.xrTableRow1.Weight = 11.5D;
             // 
-            // ordersTableAdapter1
+            // xrTableCell1
             // 
-            this.ordersTableAdapter1.ClearBeforeFill = true;
+            this.xrTableCell1.Multiline = true;
+            this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.Text = "Order ID";
+            this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell1.Weight = 0.2857142857142857D;
+            // 
+            // xrTableCell2
+            // 
+            this.xrTableCell2.Multiline = true;
+            this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.Text = "Quantity";
+            this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell2.Weight = 0.2857142857142857D;
+            // 
+            // xrTableCell3
+            // 
+            this.xrTableCell3.Multiline = true;
+            this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.Text = "Unit Price";
+            this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell3.Weight = 0.2857142857142857D;
             // 
             // XtraReport1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail,
             this.PageFooter,
-            this.DetailReport});
-            this.DataAdapter = this.customersTableAdapter1;
-            this.DataMember = "Customers";
-            this.DataSource = this.nwindDataSet1;
+            this.topMarginBand1,
+            this.bottomMarginBand1,
+            this.GroupHeader2,
+            this.GroupHeader1});
+            this.BookmarkDuplicateSuppress = false;
+            this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
+            this.sqlDataSource1});
+            this.DataMember = "Order Details";
+            this.DataSource = this.sqlDataSource1;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet1)).EndInit();
+            this.Version = "18.1";
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
 
         #endregion
-
-        private DevExpress.XtraReports.UI.XRLabel XrLabel9;
-        private DevExpress.XtraReports.UI.XRLabel XrLabel5;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.XRLabel XrLabel6;
-        private DevExpress.XtraReports.UI.DetailBand Detail2;
-        private DevExpress.XtraReports.UI.XRLabel XrLabel1;
-        private DevExpress.XtraReports.UI.XRLabel XrLabel10;
-        private DevExpress.XtraReports.UI.DetailBand Detail1;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
-        private DevExpress.XtraReports.UI.DetailReportBand DetailReport1;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
-        private DevExpress.XtraReports.UI.XRLabel XrLabel7;
-        private DevExpress.XtraReports.UI.XRLine XrLine1;
-        private DevExpress.XtraReports.UI.DetailReportBand DetailReport;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private nwindDataSet nwindDataSet1;
-        private AK16962.nwindDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter1;
-        private AK16962.nwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter1;
-        private AK16962.nwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
-
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
+        private DevExpress.XtraReports.UI.XRLabel XrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel XrLabel5;
+        private DevExpress.XtraReports.UI.XRLine XrLine1;
+        private DevExpress.XtraReports.UI.XRLabel XrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel XrLabel7;
+        private DevExpress.XtraReports.UI.XRTable xrTable2;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell6;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
+        private DevExpress.XtraReports.UI.XRTable xrTable1;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
     }
 }

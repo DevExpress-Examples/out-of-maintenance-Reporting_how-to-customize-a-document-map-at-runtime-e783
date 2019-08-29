@@ -25,12 +25,12 @@ namespace AK16962 {
             while(i < rep.PrintingSystem.Document.BookmarkNodes.Count) {
                 int index = IsNodeIncluded(bookmarklist, rep.PrintingSystem.Document.BookmarkNodes[i]);
                 if(index == -1) {
-                    bookmarklist.Add(new BookMarkList(rep.PrintingSystem.Document.BookmarkNodes[i], rep.PrintingSystem.Document.BookmarkNodes[i].Page.Index, rep.PrintingSystem.Document.BookmarkNodes[i].Text));
+                    bookmarklist.Add(new BookMarkList(rep.PrintingSystem.Document.BookmarkNodes[i], rep.PrintingSystem.Document.BookmarkNodes[i].PageIndex, rep.PrintingSystem.Document.BookmarkNodes[i].Text));
                 }
                 else {
-                    if(((BookMarkList)(bookmarklist[index])).Page > rep.PrintingSystem.Document.BookmarkNodes[i].Page.Index) {
+                    if(((BookMarkList)(bookmarklist[index])).Page > rep.PrintingSystem.Document.BookmarkNodes[i].PageIndex) {
                         ((BookMarkList)(bookmarklist[index])).Node = rep.PrintingSystem.Document.BookmarkNodes[i];
-                        ((BookMarkList)(bookmarklist[index])).Page = rep.PrintingSystem.Document.BookmarkNodes[i].Page.Index;
+                        ((BookMarkList)(bookmarklist[index])).Page = rep.PrintingSystem.Document.BookmarkNodes[i].PageIndex;
                         ((BookMarkList)(bookmarklist[index])).Name = rep.PrintingSystem.Document.BookmarkNodes[i].Text;
                     }
                 }
