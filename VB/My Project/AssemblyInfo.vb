@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System.Reflection
+﻿Imports System.Reflection
 Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
 
@@ -11,7 +10,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("Developer Express")>
 <Assembly: AssemblyProduct("AK16962")>
-<Assembly: AssemblyCopyright("Copyright � Developer Express 2007")>
+<Assembly: AssemblyCopyright("Copyright © Developer Express 2007")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 

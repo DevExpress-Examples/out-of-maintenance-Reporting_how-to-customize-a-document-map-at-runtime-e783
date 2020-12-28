@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace AK16962
+﻿Namespace AK16962
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -37,7 +35,8 @@ Namespace AK16962
 			Me.button1.TabIndex = 0
 			Me.button1.Text = "Show original report"
 			Me.button1.UseVisualStyleBackColor = True
-'			Me.button1.Click += New System.EventHandler(Me.button1_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.button1.Click += new System.EventHandler(this.button1_Click);
 			' 
 			' button2
 			' 
@@ -47,7 +46,8 @@ Namespace AK16962
 			Me.button2.TabIndex = 1
 			Me.button2.Text = "Show modified report"
 			Me.button2.UseVisualStyleBackColor = True
-'			Me.button2.Click += New System.EventHandler(Me.button2_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.button2.Click += new System.EventHandler(this.button2_Click);
 			' 
 			' Form1
 			' 
