@@ -45,7 +45,7 @@ Namespace AK16962
 			Do While i < rep.PrintingSystem.Document.BookmarkNodes.Count
 
 				Dim index As Integer = IsNodeIncluded(bookmarklist, rep.PrintingSystem.Document.BookmarkNodes(i))
-				If DirectCast(bookmarklist(index), BookMarkList).Node = rep.PrintingSystem.Document.BookmarkNodes(i) Then
+				If DirectCast(bookmarklist(index), BookMarkList).Node Is rep.PrintingSystem.Document.BookmarkNodes(i) Then
 				Else
 					Dim j As Integer = 0
 					Do While j < rep.PrintingSystem.Document.BookmarkNodes(i).Nodes.Count

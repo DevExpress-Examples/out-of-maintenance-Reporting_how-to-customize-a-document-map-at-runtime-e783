@@ -2622,13 +2622,13 @@ Namespace AK16962.nwindDataSetTableAdapters
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		Private Sub InitConnection()
 			Me._connection = New System.Data.OleDb.OleDbConnection()
-			Me._connection.ConnectionString = Global.AK16962.Properties.Settings.Default.nwindConnectionString
+			Me._connection.ConnectionString = My.Settings.Default.nwindConnectionString
 		End Sub
 
 		<System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		Private Sub InitCommandCollection()
-			Me._commandCollection = New System.Data.OleDb.OleDbCommand(0){}
+			Me._commandCollection = New System.Data.OleDb.OleDbCommand(0) {}
 			Me._commandCollection(0) = New System.Data.OleDb.OleDbCommand()
 			Me._commandCollection(0).Connection = Me.Connection
 			Me._commandCollection(0).CommandText = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region," & " PostalCode, Country, Phone, Fax FROM Customers"
@@ -2677,7 +2677,7 @@ Namespace AK16962.nwindDataSetTableAdapters
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		<System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 		Public Overridable Function Update(ByVal dataRow As System.Data.DataRow) As Integer
-			Return Me.Adapter.Update(New System.Data.DataRow() { dataRow})
+			Return Me.Adapter.Update(New System.Data.DataRow() {dataRow})
 		End Function
 
 		<System.Diagnostics.DebuggerNonUserCodeAttribute()>
@@ -3156,13 +3156,13 @@ Namespace AK16962.nwindDataSetTableAdapters
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		Private Sub InitConnection()
 			Me._connection = New System.Data.OleDb.OleDbConnection()
-			Me._connection.ConnectionString = Global.AK16962.Properties.Settings.Default.nwindConnectionString
+			Me._connection.ConnectionString = My.Settings.Default.nwindConnectionString
 		End Sub
 
 		<System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		Private Sub InitCommandCollection()
-			Me._commandCollection = New System.Data.OleDb.OleDbCommand(0){}
+			Me._commandCollection = New System.Data.OleDb.OleDbCommand(0) {}
 			Me._commandCollection(0) = New System.Data.OleDb.OleDbCommand()
 			Me._commandCollection(0).Connection = Me.Connection
 			Me._commandCollection(0).CommandText = "SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM [Order Details]"
@@ -3211,7 +3211,7 @@ Namespace AK16962.nwindDataSetTableAdapters
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		<System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 		Public Overridable Function Update(ByVal dataRow As System.Data.DataRow) As Integer
-			Return Me.Adapter.Update(New System.Data.DataRow() { dataRow})
+			Return Me.Adapter.Update(New System.Data.DataRow() {dataRow})
 		End Function
 
 		<System.Diagnostics.DebuggerNonUserCodeAttribute()>
@@ -3537,7 +3537,7 @@ Namespace AK16962.nwindDataSetTableAdapters
 		<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>
 		Private Sub InitConnection()
 			Me._connection = New System.Data.OleDb.OleDbConnection()
-			Me._connection.ConnectionString = Global.AK16962.Properties.Settings.Default.nwindConnectionString
+			Me._connection.ConnectionString = My.Settings.Default.nwindConnectionString
 		End Sub
 
 		<System.Diagnostics.DebuggerNonUserCodeAttribute()>
