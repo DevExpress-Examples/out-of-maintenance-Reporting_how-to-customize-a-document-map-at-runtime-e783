@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace AK16962
+﻿Namespace AK16962
 	Partial Public Class XtraReport1
 		''' <summary>
 		''' Required designer variable.
@@ -58,7 +56,10 @@ Namespace AK16962
 			' 
 			' XrLabel5
 			' 
-			Me.XrLabel5.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.CompanyName", ""), New DevExpress.XtraReports.UI.XRBinding("Bookmark", Nothing, "Customers.CompanyName", "")})
+			Me.XrLabel5.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {
+				New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.CompanyName", ""),
+				New DevExpress.XtraReports.UI.XRBinding("Bookmark", Nothing, "Customers.CompanyName", "")
+			})
 			Me.XrLabel5.Location = New System.Drawing.Point(67, 0)
 			Me.XrLabel5.Name = "XrLabel5"
 			Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -68,7 +69,10 @@ Namespace AK16962
 			' xrLabel2
 			' 
 			Me.xrLabel2.BookmarkParent = Me.XrLabel5
-			Me.xrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.CustomersOrders.OrdersOrder Details.ProductID", ""), New DevExpress.XtraReports.UI.XRBinding("Bookmark", Nothing, "Customers.CustomersOrders.OrdersOrder Details.ProductID", "")})
+			Me.xrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {
+				New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.CustomersOrders.OrdersOrder Details.ProductID", ""),
+				New DevExpress.XtraReports.UI.XRBinding("Bookmark", Nothing, "Customers.CustomersOrders.OrdersOrder Details.ProductID", "")
+			})
 			Me.xrLabel2.Location = New System.Drawing.Point(183, 0)
 			Me.xrLabel2.Name = "xrLabel2"
 			Me.xrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)

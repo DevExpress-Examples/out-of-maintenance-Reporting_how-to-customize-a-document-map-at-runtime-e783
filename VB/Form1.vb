@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections
 Imports System.Windows.Forms
 Imports DevExpress.XtraPrinting
@@ -8,17 +7,22 @@ Imports DevExpress.XtraReports.UI
 Namespace AK16962
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
 
 		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button1.Click
+			If Not Me.button1.IsHandleCreated Then Return
+
 			Dim r As New XtraReport1()
 			Dim rpt As New ReportPrintTool(r)
 			rpt.ShowPreviewDialog()
 		End Sub
 
 		Private Sub button2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button2.Click
+			If Not Me.button2.IsHandleCreated Then Return
+
 			Dim rep As New XtraReport1()
 			rep.CreateDocument()
 
@@ -29,10 +33,10 @@ Namespace AK16962
 				If index = -1 Then
 					bookmarklist.Add(New BookMarkList(rep.PrintingSystem.Document.BookmarkNodes(i), rep.PrintingSystem.Document.BookmarkNodes(i).Page.Index, rep.PrintingSystem.Document.BookmarkNodes(i).Text))
 				Else
-					If (CType(bookmarklist(index), BookMarkList)).Page > rep.PrintingSystem.Document.BookmarkNodes(i).Page.Index Then
-						CType(bookmarklist(index), BookMarkList).Node = rep.PrintingSystem.Document.BookmarkNodes(i)
-						CType(bookmarklist(index), BookMarkList).Page = rep.PrintingSystem.Document.BookmarkNodes(i).Page.Index
-						CType(bookmarklist(index), BookMarkList).Name = rep.PrintingSystem.Document.BookmarkNodes(i).Text
+					If DirectCast(bookmarklist(index), BookMarkList).Page > rep.PrintingSystem.Document.BookmarkNodes(i).Page.Index Then
+						DirectCast(bookmarklist(index), BookMarkList).Node = rep.PrintingSystem.Document.BookmarkNodes(i)
+						DirectCast(bookmarklist(index), BookMarkList).Page = rep.PrintingSystem.Document.BookmarkNodes(i).Page.Index
+						DirectCast(bookmarklist(index), BookMarkList).Name = rep.PrintingSystem.Document.BookmarkNodes(i).Text
 					End If
 				End If
 				i += 1
@@ -41,11 +45,11 @@ Namespace AK16962
 			Do While i < rep.PrintingSystem.Document.BookmarkNodes.Count
 
 				Dim index As Integer = IsNodeIncluded(bookmarklist, rep.PrintingSystem.Document.BookmarkNodes(i))
-				If (CType(bookmarklist(index), BookMarkList)).Node Is rep.PrintingSystem.Document.BookmarkNodes(i) Then
+				If DirectCast(bookmarklist(index), BookMarkList).Node Is rep.PrintingSystem.Document.BookmarkNodes(i) Then
 				Else
 					Dim j As Integer = 0
 					Do While j < rep.PrintingSystem.Document.BookmarkNodes(i).Nodes.Count
-						CType(bookmarklist(index), BookMarkList).Node.Nodes.Add(rep.PrintingSystem.Document.BookmarkNodes(i).Nodes(j))
+						DirectCast(bookmarklist(index), BookMarkList).Node.Nodes.Add(rep.PrintingSystem.Document.BookmarkNodes(i).Nodes(j))
 						j += 1
 					Loop
 
